@@ -1,0 +1,670 @@
+/* Body and Base Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://example.com/beautiful-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+
+#categories-dropdown {
+    padding: 12px 24px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0066ff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.brand-blog-link {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #ffde59;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Full Width Card for Curating Text */
+.brand-full-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Search Bar within the card */
+.brand-search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.brand-search-bar input[type="text"] {
+    width: 60%;
+    padding: 12px 20px;
+    border: 2px solid #ffde59;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.brand-search-bar input[type="text"]:focus {
+    border-color: #ffd000;
+}
+
+.brand-search-bar button {
+    padding: 12px 30px;
+    background-color: #ffde59;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-search-bar button:hover {
+    background-color: #ffd000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Trending Listings Section */
+.brand-trending {
+    padding: 40px 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.brand-trending h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 22px;
+}
+
+
+
+/* Cards Container */
+.brand-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Card */
+.brand-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px; /* Adjust this value for a smaller card */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhances the shadow */
+}
+
+/* Card Image */
+.brand-card img {
+    width: 100%;
+    height: 150px;
+    transition: opacity 0.3s ease;
+}
+
+.brand-card:hover img {
+    opacity: 0.9; /* Slightly fades the image on hover */
+}
+
+/* Card Content */
+.brand-card-content {
+    padding: 20px; /* Slightly increased padding */
+}
+
+.brand-card-content h3 {
+    margin: 0 0 10px 0; /* Increased margin for better spacing */
+    font-size: 15px; /* Slightly larger font size */
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.brand-card:hover .brand-card-content h3 {
+    color: #0066ff; /* Changes header color on hover */
+}
+
+.brand-card-content p {
+    font-size: 14px; /* Slightly larger font size */
+    color: #666;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .brand-search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .brand-full-card h2 {
+        font-size: 24px;
+    }
+
+    .brand-full-card p {
+        font-size: 16px;
+    }
+
+    .brand-card {
+        max-width: 100%;
+    }
+}
+
+.hideHome {
+    display: none;
+}
+.showHome {
+    display: block;
+}
+
+.hideSubService {
+    display: none;
+}
+.showSubService {
+    display: block;
+}
+
+.custom-search-box {
+    width: 250px;
+    padding: 10px;
+    margin-right:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Add hover effect and focus style for the search box */
+.custom-search-box:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for the Home button */
+.home-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #ffd000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Home button hover effect */
+.home-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.subService-header {
+    color: #141311;
+    text-align: left;
+}
+
+/* Tiles Container */
+.subService-tiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Tile Container */
+.subService-tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f4f4f9; /* Light background for contrast */
+}
+
+/* Tile */
+.subService-tile {
+    justify-content: center;
+    background: linear-gradient(145deg, #fff, #f1f1f1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    height: 100px; /* Slightly taller for more content */
+    background-color: #0dd97e; 
+    border: 1px solid /* Soft border for elegance */
+}
+
+/* Tile hover effect */
+.subService-tile:hover {
+    transform: translateY(-8px); /* Elevates the tile more on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tile Image */
+.subService-tile img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-right: 20px;
+    border: 3px solid #ddd; /* Thicker border around the image */
+    transition: transform 0.3s ease;
+}
+
+/* Tile Image Hover Animation */
+.subService-tile:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Tile Content */
+.subService-tile-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Tile Heading */
+.subService-tile-content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Tile Description */
+.subService-tile-content p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Hover effect on heading */
+.subService-tile:hover h3 {
+    color: #ff7043; /* Warmer orange color on hover */
+}
+
+/* Tile Action Buttons (Optional) */
+.subService-tile-actions {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.subService-tile-actions button {
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subService-tile-actions button:hover {
+    background-color: #ff5722; /* Darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect on hover */
+}
+
+/* Additional transition for buttons */
+.subService-tile:hover .subService-tile-actions button {
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* Main Header Styles */
+.mainpage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 18px;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #1abc9c;
+}
+
+/* Logo Styles */
+.mainpage-logo h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #ecf0f1;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles */
+.mainpage-nav {
+    display: flex;
+    align-items: center;
+}
+
+.mainpage-nav select {
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 25px;
+    border: 2px solid #1abc9c;
+    background-color: #ecf0f1;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.mainpage-nav select:hover {
+    border-color: #16a085;
+}
+
+.mainpage-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mainpage-nav a:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .mainpage-header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .mainpage-nav {
+        margin-top: 15px;
+    }
+
+    .mainpage-logo h1 {
+        font-size: 28px;
+    }
+
+    .mainpage-nav select {
+        margin-right: 15px;
+    }
+
+    .mainpage-nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+
+.hideBrandPage {
+    display: none;
+}
+.showBrandPage {
+    display: block;
+}
+
+
+
+
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.brandsPage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e0f0f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 119px;
+    margin-right: 119px;
+    padding:10px;
+}
+
+.brandsPage-title {
+    margin: 0;
+}
+
+.brandsPage-last-updated {
+    margin: 0;
+    padding: 3px 20px;
+    background-color: #075819;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    white-space: nowrap;
+}
+
+.brandsPage-last-updated:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Cards container */
+.brandsPage-coupons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+/* Card styling */
+.brandsPage-card {
+    width: 90%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.brandsPage-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sequence number */
+.brandsPage-sequence {
+    /* font-size: 2.5em;
+    color: #4CAF50; */
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.brandsPage-card img {
+    max-width: 120px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.brandsPage-card-content {
+    flex: 1;
+}
+
+.brandsPage-card-content h3 {
+    margin: 0;
+    color: #333;
+}
+
+.brandsPage-card-content p {
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Coupon code and copy button */
+.brandsPage-coupon-code {
+    font-size: 1.3em;
+    color: #cd7d74;
+    font-weight: bold;
+    background-color: #afefe3;
+    padding: 3px 12px;
+    border-radius: 11px;
+}
+
+.brandsPage-copy-btn {
+    cursor: pointer;
+    padding: 8px 12px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.brandsPage-copy-btn:hover {
+    background-color: #e64a19;
+}
+
+
+.brandsPage-validity {
+    color: #888;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Visit site button */
+.brandsPage-visit-btn {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.brandsPage-visit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Toast base styling */
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 17px;
+}
+
+/* Success and Error styles */
+.toast-success {
+    background-color: green;
+}
+
+.toast-error {
+    background-color: red;
+}
+
+/* Show the toast */
+.toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations */
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.mainpage-blog-link {
+    margin-left: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #0c3c78;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mainpage-blog-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<div id="toast" class="toast">Copied!</div>
+<div id="homeblock" class="showHome">
+
+    <body>
+        <div class="mainpage-header">
+            <div class="mainpage-logo">
+                <h2>SparkSky</h2>
+            </div>
+            <div class="mainpage-nav">
+                <select id="categories-dropdown">
+                    <option value="">Categories</option>
+                </select>
+                <a href="#blog" class="mainpage-blog-link">Blog</a>
+            </div>
+        </div>
+
+        <!-- Full Width Card for Curating Text and Search Bar -->
+        <div class="brand-full-card">
+            <h2>Curating The Best Of Everything</h2>
+            <p>Smarter choices for better living</p>
+
+            <!-- Search Bar within the card -->
+            <div class="brand-search-bar">
+                <input oninput="toggleUI()" id="searchtext" type="text" placeholder="Search for brands...">
+            </div>
+        </div>
+
+        <!-- Trending Listings Section -->
+        <div class="brand-trending">
+            <h2>Discover The Trending Curated Listings</h2>
+            <div class="brand-cards-container" id="cards-container">
+                <!-- Cards will be dynamically inserted here -->
+            </div>
+        </div>
+
+    </body>
+</div>
+
+
+<div id="subServiceBlock" class="hideSubService">
+    <div class="mainpage-header">
+        <div class="mainpage-logo">
+            <h2>SparkSky</h2>
+        </div>
+        <div class="mainpage-nav">
+            <input oninput="handleSearchSubServices()" type="text" id="subservicesearchbox" class="custom-search-box"
+                placeholder="Search...">
+            <a onclick="goToHome()" class="mainpage-blog-link">Home</a>
+            <!-- <button class="home-button" onclick="goToHome()">Home</button> -->
+        </div>
+    </div>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brand Tiles</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="subService-header">
+            <h3 style="margin-left:37px;" id="selectedservice"></h3>
+        </header>
+        <div id="tiles-container" class="subService-tiles-container"></div>
+    </body>
+</div>
+
+
+
+
+<div id="brandsPageBlock" class="hideBrandPage">
+    <div class="mainpage-header">
+        <div class="mainpage-logo">
+            <h2>SparkSky</h2>
+        </div>
+        <div class="mainpage-nav">
+            <a onclick="goToHome()" class="mainpage-blog-link">Home</a>
+        </div>
+    </div>
+
+ 
+    <body>
+        <div class="brandsPage-header">
+            <h3 class="brandsPage-title">Exclusive Brand Coupons</h3>
+            <p class="brandsPage-last-updated">Last Updated: <span id="brandsPage-last-updated-date"></span></p>
+        </div>
+     
+        <div id="brandsPage-coupons-container" class="brandsPage-coupons-container">
+            <!-- Brand cards will be dynamically inserted here -->
+        </div>
+    
+    </body>
+ 
+</div>
+
+</html>
